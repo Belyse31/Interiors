@@ -1,0 +1,322 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+#nav {
+    position: fixed;              
+    top: 0;                       
+    right: 0;                    
+    width: 100%;                  
+    background-color: #868484;        
+    padding: 10px 0;
+    z-index: 1000;               
+    display: flex;
+    justify-content: flex-end;     
+    overflow-x: auto;              
+    white-space: nowrap;           
+}
+#nav li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+#nav {
+    position: fixed;              
+    top: 0;                       
+    right: 0;                    
+    width: 100%;                  
+    background-color: #868484;        
+    padding: 10px 0;
+    z-index: 1000;               
+    display: flex;
+    justify-content: flex-end;     
+    overflow-x: auto;              
+    white-space: nowrap;           
+}
+#nav li {
+    display: inline-block;
+}
+.logo {  
+    position: absolute;   
+    left: 20px;          
+    top: 0%;             
+    transform: translateY(-50%); 
+} 
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                 
+    gap: 10px;                    
+}
+#nav a {
+    text-decoration: none;         
+    padding: 10px 20px;            
+    background-color: #333;        
+    color: white;                  
+    border-radius: 20px;           
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+#nav a:hover {
+    background-color: #bbb;  
+}
+a {
+    text-decoration: none;
+    color: rgb(162, 221, 191); 
+}
+  .uno img {
+    height: 1cm;
+    width: 3cm;
+    margin-top: 30px;
+}
+/* Hero section styles */
+.hero {
+    background-image: url('../photos/15 Luxury Living Room.jpeg');
+    color: #fff;
+    text-align: center;
+    padding: 10rem 25rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.button-primary {
+    background-color: #fff;
+    color: #000;
+}
+.button-primary:hover {
+background-color: #868484;
+}
+.button-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.button-secondary:hover {
+    background-color: rgb(25, 25, 85);
+}
+
+/* Featured projects styles */
+.featured-projects {
+    padding: 4rem 1rem;
+    background-color: #f4f4f4;
+}
+.featured-projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Services styles */
+.services {
+    padding: 4rem 1rem;
+}
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-card {
+    text-align: center;
+}
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.service-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Call to action styles */
+.cta {
+    background-color: #f4f4f4;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.cta form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.cta input[type="email"] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.cta button {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+#footer {
+    background-color: #3b3a3a;            
+    color: #fff;                       
+    padding: 40px 0;                   
+    font-family: Arial, sans-serif;    
+}
+.footer-content {
+    display: flex;                     
+    justify-content: space-between;    
+    max-width: 1200px;                 
+    margin: 0 auto;                    
+    flex-wrap: wrap;                   
+}
+.footer-section {
+    flex-basis: 25%;                   
+    padding: 20px;
+}
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #555;     
+    padding-bottom: 5px;
+}
+.footer-section ul {
+    list-style: none;                  
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    color: #aaa;                       
+    text-decoration: none;
+    transition: color 0.3s;            
+}
+.footer-section ul li a:hover {
+    color: #fff;                       
+}
+.footer-section.contact p {
+    margin-bottom: 10px;
+}
+.footer-section.social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #aaa;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.footer-section.social a:hover {
+    color: #fff;                       
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;        
+    font-size: 14px;
+}
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta form {
+        flex-direction: column;
+    }
+}
